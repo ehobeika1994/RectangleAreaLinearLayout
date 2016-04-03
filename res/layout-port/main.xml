@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"  
+        android:text="@string/hello" />
+
+    <!-- Length Data Entry -->
+    
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="142dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/lengthText" 
+             />
+
+        <EditText
+            android:id="@+id/lengthEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="numberDecimal" 
+            android:layout_gravity="center">
+
+            <requestFocus />
+        </EditText>
+
+    </LinearLayout>
+
+    <!-- Breadth Data Entry -->
+    
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+		<TextView
+            android:id="@+id/textView2"
+            android:layout_width="142dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/breadthText" />
+
+        <EditText
+            android:id="@+id/breadthEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="numberDecimal" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/areaButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"  
+        android:text="@string/calculateText" />
+
+    <!-- Results output -->
+    
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+        
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="142dp"
+            android:layout_height="wrap_content" 
+            android:gravity="center"
+            android:text="@string/areaText" />
+
+        <EditText
+            android:id="@+id/areaEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="numberDecimal" />
+        
+        
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/clearButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/clearText" />
+
+</LinearLayout>
